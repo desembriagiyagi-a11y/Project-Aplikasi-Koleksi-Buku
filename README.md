@@ -2,8 +2,11 @@
 
 ## 1. Nama Kelompok
 
-**Nama kelompok:** [Isi nama kelompok]  
-**Anggota:** [Isi nama dan NIM setiap anggota]
+**Nama kelompok:** [Kelompok 7]  
+**Anggota:** [Desembriagi B. Kaya 25083000011
+Joseph Karol Mayabubun 25083000021
+Sirilus Osorio Umbu Duka 25083000063 
+Noperi Nawegalen 25083000051]
 
 ## 2. Deskripsi
 
