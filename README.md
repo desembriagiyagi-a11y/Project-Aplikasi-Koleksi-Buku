@@ -44,9 +44,7 @@ masukkan `y` untuk melanjutkan; jawaban lain membatalkan tindakan.
 
 ## 5. Pembagian Tugas
 
-| Anggota | Tugas |
-| --- | --- |
-| Nama Anggota | NIM | Pembagian Tugas |
+| Nama Anggota |Tugas| NIM | Pembagian Tugas |
 | :--- | :--- | :--- |
 | Desembriagi B. Kaya | 25083000011 | Mengerjakan Fitur 1 (Tambah Buku), Fitur 2 (Tampilkan Semua Buku), dan menyusun dokumen `README.md`[cite: 1]. |
 | Joseph Karol Mayabubun | 25083000021 | Mengerjakan Fitur 3 (Cari Buku) dan Fitur 5 (Filter Buku berdasarkan Genre)[cite: 1]. |
