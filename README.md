@@ -46,6 +46,8 @@ masukkan `y` untuk melanjutkan; jawaban lain membatalkan tindakan.
 
 | Anggota | Tugas |
 | --- | --- |
-| [Nama dan NIM anggota 1] | Implementasi tambah buku, validasi data, dan tampilan koleksi. |
-| [Nama dan NIM anggota 2] | Implementasi pencarian buku dan filter berdasarkan genre. |
-| [Nama dan NIM anggota 3] | Implementasi update status, penghapusan buku, dan penanganan menu/input. |
+| Nama Anggota | NIM | Pembagian Tugas |
+| :--- | :--- | :--- |
+| Desembriagi B. Kaya | 25083000011 | Mengerjakan Fitur 1 (Tambah Buku), Fitur 2 (Tampilkan Semua Buku), dan menyusun dokumen `README.md`[cite: 1]. |
+| Joseph Karol Mayabubun | 25083000021 | Mengerjakan Fitur 3 (Cari Buku) dan Fitur 5 (Filter Buku berdasarkan Genre)[cite: 1]. |
+| Sirilus Osorio Umbu Duka | 25083000063 | Mengerjakan Fitur 4 (Update Status), Fitur 6 (Hapus Buku), serta membangun Menu Utama CLI[cite: 1]. |
