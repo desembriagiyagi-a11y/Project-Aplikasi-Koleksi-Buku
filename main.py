@@ -134,37 +134,6 @@ def cari_buku() -> None:
     ]
     tampilkan_buku(hasil)
 
-def update_buku() -> None:
-    """Mengubah status buku berdasarkan ID."""
-    id_buku = input("Masukkan ID buku yang akan diperbarui: ").strip()
-    buku = next(
-        (item for item in koleksi_buku if str(item["id"]) == id_buku),
-        None,
-    )
-    if buku is None:
-        print("Buku dengan ID tersebut tidak ditemukan.")
-        return
-
-    status_saat_ini = str(buku["status"])
-    status_baru = {
-        "tersedia": "Dipinjam",
-        "dipinjam": "Tersedia",
-    }.get(status_saat_ini.casefold())
-    if status_baru is None:
-        print(f'Status buku "{status_saat_ini}" tidak dapat diperbarui.')
-        return
-
-    tampilkan_detail_buku(buku)
-    konfirmasi = input(
-        f"Ubah status menjadi {status_baru}? (y/n): "
-    ).strip().casefold()
-    if konfirmasi != "y":
-        print("Perubahan status dibatalkan.")
-        return
-
-    buku["status"] = status_baru
-    print(f"Status buku berhasil diubah menjadi {status_baru}.")
-
 def hapus_buku() -> None:
     """Menghapus buku berdasarkan ID."""
     id_buku = input("Masukkan ID buku yang akan dihapus: ").strip()
@@ -196,7 +165,7 @@ def main() -> None:
         "2": ("Tampilkan buku", tampilkan_buku),
         "3": ("Cari buku", cari_buku),
         "4": ("Update status buku", update_buku),
-        "5": ("Filter buku berdasarkan genre", filter_buku),
+        "5": ("Filter buku berdasarkan genre",  filter_buku),
         "6": ("Hapus buku", hapus_buku),
     }
 
