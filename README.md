@@ -4,10 +4,10 @@
 
 | Nama Kelompok | Nama Anggota | NIM |
 | :--- | :--- | :--- |
-| Kelompok 7 | Desembriagi B. Kaya | 25083000011 |
-| Kelompok 7 | Joseph Karol Mayabubun | 25083000021 |
-| Kelompok 7 | Sirilus Osorio Umbu Duka | 25083000063 |
-| Kelompok 7 | Noperi Nawegalen | 25083000051 |
+| 1 | Desembriagi B. Kaya | 25083000011 |
+| 2 | Joseph Karol Mayabubun | 25083000021 |
+| 3 | Sirilus Osorio Umbu Duka | 25083000063 |
+| 4 | Noperi Nawegalen | 25083000051 |
 
 ## 2. Deskripsi
 
