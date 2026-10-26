@@ -110,3 +110,26 @@ def tampilkan_detail_buku(buku: dict[str, str | int]) -> None:
         ("Status", "status"),
     ):
         print(f"{label}: {buku[kunci]}")
+
+def cari_buku() -> None:
+    """Mencari buku berdasarkan kode atau judul."""
+    kata_kunci = input("Masukkan kode buku atau judul/kata kunci: ").strip()
+    if not kata_kunci:
+        print("Kata kunci pencarian tidak boleh kosong.")
+        return
+
+    buku_kode = next(
+        (buku for buku in koleksi_buku if str(buku["kode_buku"]) == kata_kunci),
+        None,
+    )
+    if buku_kode is not None:
+        tampilkan_detail_buku(buku_kode)
+        return
+
+    kata_kunci = kata_kunci.casefold()
+    hasil = [
+        buku
+        for buku in koleksi_buku
+        if kata_kunci in str(buku["judul"]).casefold()
+    ]
+    tampilkan_buku(hasil)
