@@ -50,4 +50,4 @@ masukkan `y` untuk melanjutkan; jawaban lain membatalkan tindakan.
 | Desembriagi B. Kaya | 25083000011 | Mengerjakan Fitur 1 (Tambah Buku), Fitur 2 (Tampilkan Semua Buku), dan menyusun dokumentasi `README.md`. |
 | Joseph Karol Mayabubun | 25083000021 | Mengerjakan Fitur 3 (Cari Buku) dan Fitur 5 (Filter Buku berdasarkan Genre). |
 | Sirilus Osorio Umbu Duka | 25083000063 | Mengerjakan Fitur 4 (Update Status), Fitur 6 (Hapus Buku), dan membangun menu utama CLI. |
-| Noperi Nawegalen | 25083000051 | Tidak aktif dalam kelompok. |
+| Noperi Nawegalen | 25083000051 | Aktif dan membantu bekerja. |
