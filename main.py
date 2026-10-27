@@ -134,6 +134,52 @@ def cari_buku() -> None:
     ]
     tampilkan_buku(hasil)
 
+def update_buku() -> None:
+    """Mengubah status buku berdasarkan ID."""
+    id_buku = input("Masukkan ID buku yang akan diperbarui: ").strip()
+    buku = next(
+        (item for item in koleksi_buku if str(item["id"]) == id_buku),
+        None,
+    )
+    if buku is None:
+        print("Buku dengan ID tersebut tidak ditemukan.")
+        return
+
+    status_saat_ini = str(buku["status"])
+    status_baru = {
+        "tersedia": "Dipinjam",
+        "dipinjam": "Tersedia",
+    }.get(status_saat_ini.casefold())
+    if status_baru is None:
+        print(f'Status buku "{status_saat_ini}" tidak dapat diperbarui.')
+        return
+
+    tampilkan_detail_buku(buku)
+    konfirmasi = input(
+        f"Ubah status menjadi {status_baru}? (y/n): "
+    ).strip().casefold()
+    if konfirmasi != "y":
+        print("Perubahan status dibatalkan.")
+        return
+
+    buku["status"] = status_baru
+    print(f"Status buku berhasil diubah menjadi {status_baru}.")
+
+def filter_buku() -> None:
+    """Memfilter buku berdasarkan genre."""
+    genre = input("Masukkan genre: ").strip()
+    if not genre:
+        print("Kata kunci genre tidak boleh kosong.")
+        return
+
+    genre = genre.casefold()
+    hasil = [
+        buku
+        for buku in koleksi_buku
+        if genre in str(buku["genre"]).casefold()
+    ]
+    tampilkan_buku(hasil)
+
 def hapus_buku() -> None:
     """Menghapus buku berdasarkan ID."""
     id_buku = input("Masukkan ID buku yang akan dihapus: ").strip()
